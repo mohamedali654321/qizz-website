@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Quizz Appliaction</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" href="style.css">
+  
+</head>
+<body>
+    <div class="container"  id="quizzContainer">
+        <div class="title">Quizz</div>
+        <div class="question" id="question"></div>
+        <label class="option"> <input type="radio" name="option" id="option" value="1"> <span id="opt1"></span> </label>
+        <label class="option"> <input type="radio" name="option" id="option" value="2"> <span id="opt2"></span> </label>
+        <label class="option"> <input type="radio" name="option" id="option" value="3"> <span id="opt3"></span> </label>
+        <label class="option"> <input type="radio" name="option" id="option" value="4"> <span id="opt4"> </span> </label>
+          <button class="next-btn" id="nextButton" onclick="loadNextQuestion()">Next Qestion</button>
+
+    </div>
+    <div class="container result h2" id="result" style="display: none;">
+       
+    </div>
+
+
+
+
+  <script src="question.js"></script>
+  <script src="quizz-script.js"></script>
+  <a href="page.html" class="next-btn" style="text-align: center; padding-top: 5px;font-size: 20px;font-weight: bold;">HOME</a>
+ 
+</body>
+</html>
